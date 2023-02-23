@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwipeGesture.GalleryApp">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#ff6961" Padding="24" CornerRadius="0">
+                <Label Text="Gallery App" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Image x:Name="img" Source="https://i.redd.it/2axq83mwivja1.png" VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+                
+                <Image.GestureRecognizers>
+                    <SwipeGestureRecognizer Direction="Left" Swiped="swipeHandler" />
+                    <SwipeGestureRecognizer Direction="Right" Swiped="swipeHandler" />
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

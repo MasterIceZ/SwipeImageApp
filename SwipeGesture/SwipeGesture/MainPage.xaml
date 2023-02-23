@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwipeGesture.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#ff6961" Padding="24" CornerRadius="0">
+            <Label Text="Gallery App" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Button WidthRequest="100" FontSize="20" Text="App" HorizontalOptions="Center" Clicked="buttonHandler"/>
+    </StackLayout>
+
+</ContentPage>
